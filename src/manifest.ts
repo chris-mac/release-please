@@ -1554,7 +1554,7 @@ async function latestReleaseVersion(
     : undefined;
 
   logger.info(
-    `Looking for latest release on branch: ${targetBranch} with prefix: ${prefix}`
+    `Looking for HELLOOO!!! latest release on branch: ${targetBranch} with prefix: ${prefix}`
   );
 
   // collect set of recent commit SHAs seen to verify that the release
