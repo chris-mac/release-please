@@ -246,6 +246,7 @@ export class GitHub {
    * @param {string} token Optional. A GitHub API token used for authentication.
    */
   static async create(options: GitHubCreateOptions): Promise<GitHub> {
+    this.logger.info(`Starting the create`)
     const apiUrl = options.apiUrl ?? GH_API_URL;
     const graphqlUrl = options.graphqlUrl ?? GH_GRAPHQL_URL;
     const releasePleaseVersion = require('../../package.json').version;
